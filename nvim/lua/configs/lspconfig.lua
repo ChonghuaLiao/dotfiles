@@ -6,7 +6,8 @@ local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
 -- local servers = { "pyright", "texlab", "bash-language-server" }
-local servers = { "pyright", "texlab", }
+-- local servers = { "pyright", "texlab", }
+local servers = {}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
